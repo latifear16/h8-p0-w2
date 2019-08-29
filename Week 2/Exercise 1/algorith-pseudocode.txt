@@ -1,0 +1,128 @@
+//1. Newton Second Law
+
+//Secara matematis hukum II Newton dirumuskan sebagai berikut: ΣF = m x a
+
+//ΣF = resultan gaya (Newton)
+
+//m = massa benda (kg)
+
+//a = percepatan benda (m/s2)
+
+//Berdasarkan keterangan di atas, buatlah sebuah algoritma / pseudocode untuk menghitung resultan gaya pada sebuah mobil yang memiliki massa benda 600 kg dan ketika didorong oleh tiga orang percepatannya adalah 2 m/s2!
+
+Analisis
+
+Input :
+massa benda (m) = 600 
+percepatan benda (a) = 2
+
+Output : Resultan gaya (ΣF)
+Rumus : ΣF = m x a
+
+MENGHITUNG RESULTAN GAYA HUKUM II NEWTON
+
+Algoritma 
+1. Masukkan nilai massa benda
+2. Masukkan nilai percepatan benda
+3. Hitung resultan gaya dengan menggunakan rumus (massa benda (m) x percepatan benda (m/s2)
+4. Tampilkan hasil perhitungan
+
+Pseudocode
+
+START
+    STORE `m` with 600
+    STORE `a` with 2
+
+    STORE `ΣF` with CALCULATE (m * a)
+
+    DISPLAY `ΣF`
+
+END
+
+//2. Tahun Kabisat
+//Apa yang kamu ketahui tentang tanggal 29 Februari? Kamu pasti tahu jika suatu tahun memiliki tanggal 29 Februari berarti tahun tersebut merupakan tahun kabisat.
+
+//Dalam kalender Gregorian, tahun kabisat memiliki beberapa kriteria yaitu antara lain:
+
+//Jika tahun habis di bagi 4 dan tidak habis di bagi 100, atau
+//Jika tahun habis di bagi 4, habis di bagi 100 dan habis di bagi 400
+//Buatlah algoritma & pseudocode untuk menentukan apakah suatu tahun merupakan tahun kabisat atau bukan!
+
+Algoritma
+1. Tentukan tahun
+2. a. Apakah tahun tersebut habis dibagi 4 dan tidak habis di bagi 100 ? 
+   b. Apakah tahun tersebut habis dibagi 4, habis dibagi 100 dan habis dibagi 400?
+3. Jika point a terpenuhi maka tampilkan hasil, jika tidak maka lanjut ke poin b, jika poin b terpenuhi tampilkan hasil.   
+4. Jika point a dan b tidak terpenuhi maka hasilnya bukan merupakan tahun kabisat 
+
+Pseudocode
+
+START
+    STORE `year` with any value number
+        IF `year` MOD 4 EQUAL TO 0 AND `year` MOD 100 NOT EQUAL TO 0 THEN
+            DISPLAY "Tahun Kabisat"
+        ELSE IF `year` MOD 4 EQUAL TO 0 AND `year` MOD 100 EQUAL TO 0 AND `year` MOD 400 EQUAL TO 0 THEN
+            DISPLAY "Tahun Kabisat
+        ELSE
+            DISPLAY "Bukan Tahun Kabisat"
+        END IF
+END
+
+//3. Laundry Day
+
+//Foxie akan mencuci pakaiannya menggunakan mesin cuci. Pakaian yang akan dicuci oleh Foxie sebanyak 20 dan akan dimasukkan ke mesin cuci. Mesin cuci akan dinyalakan jika semua pakaian Foxie sudah masuk ke mesin cuci.
+
+//Bantulah Foxie untuk menghitung jumlah pakaian yang akan dimasukkan ke mesin cuci menggunakan algoritma & pseudocode perulangan!
+
+Algoritma
+1. Karena belum ada pakaian yang dimasukkan, tentukan nilai awal pakaian dengan 0
+2. Selama pakaian yang dimasukkan kurang dari 20, tambah nilai pakaian serta tampilkan hasilnya seiring bertambahnya jumlah pakaian yang dimasukkan ke mesin cuci 
+3. Tampilkan hasil apabila semua pakaian sudah masuk mesin cuci
+
+
+
+Pseudocode
+START
+    STORE `pakaian` with 0
+    
+    WHILE `pakaian` <= 20
+	    DISPLAY `pakaian`  
+	    INCREMENT `pakaian`
+    END WHILE 
+
+    DISPLAY 'Semua pakaian sudah masuk dan mesin cuci dinyalakan'
+END
+
+//4. Periksa Kuku
+//Seorang guru akan memeriksa kuku siswa-siswinya yang sebanyak 40 orang dengan cara berkeliling kelas. Jika guru menemukan siswa/siswi yang memiliki kuku yang panjang maka guru akan menghukum siswa/siswi tersebut, jika tidak guru akan memuji siswa/siswi tersebut.
+
+//Buatlah algoritma & pseudocode untuk permasalahan diatas.
+
+Algoritma
+1. Masukkan jumlah awal siswa yang akan dicek sebesar 1
+2. Karena guru berkeliling mengecek siswa satu persatu, maka jumlah siswa yang dicek akan terus bertambah sampai menyentuh total jumlah siswa, yaitu 40
+3. Tentukan kriteria siswa yang memiliki kuku panjang atau pendek dalam rumus matematika, dalam hal ini bisa menggunakan modulus
+4. Tentukan siswa kuku panjang = angka genap, siswa kuku pendek = angka ganjil
+5. Tampilkan hasil
+
+
+
+Pseudocode
+START
+    STORE `siswa` with 1
+
+    WHILE `siswa` <= 40
+	    DISPLAY 'siswa'
+        INCREMENT `siswa`	
+        IF `siswa` MOD 2 equals to 0
+            DISPLAY "Kuku Panjang dan Hukum Siswa/Siswi"
+            ELSE 
+            DISPLAY "Kuku pendek dan Puji Siswa/Siswi"
+        END IF
+    END WHILE
+END
+
+
+
+
+
